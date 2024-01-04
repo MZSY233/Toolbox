@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -11,7 +10,7 @@
       #linkContainer a {
         margin-top: 32px;
         display: block;
-        background: #05a630;
+        background: #39C5BB;
         color: #fff;
         font-size: 32px;
         padding: 48px 12px;
@@ -23,12 +22,12 @@
   </head>
   <body>
     <h1>Toolbox Diagnostics</h1>
-    <p>Toolbox can be started with diagnostic options. Click the button below to open the app's diagnostic interface.</p>
+    <p>本网站可以用于启动Toolbox的Diagnostic页面。<p>点击下面的按钮打开Toolbox的Diagnostic页面。</p>
     <div id="linkContainer"></div>
     <script>
       var a = document.createElement('a');
       a.href = "mctoolbox://diag" + window.location.search;
-      a.textContent = "Open Toolbox";
+      a.textContent = "打开 Toolbox";
       document.getElementById("linkContainer").appendChild(a);
     </script>
   </body>
