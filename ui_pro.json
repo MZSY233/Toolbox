@@ -1,0 +1,999 @@
+{
+    "name": "Pro菜单",
+    "help_id": "MZSY",
+    "android_icon": "pro",
+    "shortcut_color": "This json is made by MZS©",
+    "items": [
+        {
+            "type": "toggle",
+            "path": "MZS",
+            "label": "关于",
+            "has_shortcut": false,
+            "items": [
+                {
+                    "type": "toggle",
+                    "path": "f",
+                    "label": "Friend",
+                    "items": [
+                        {
+                            "type": "action",
+                            "path": "f2",
+                            "label": "Orange"
+                        },
+                        {
+                            "type": "action",
+                            "path": "f3",
+                            "label": "TeAirew"
+                        },
+                        {
+                            "type": "action",
+                            "path": "f4",
+                            "label": "ying"
+                        },
+                        {
+                            "type": "action",
+                            "path": "f5",
+                            "label": "d2u8"
+                        },
+                        {
+                            "type": "action",
+                            "path": "f6",
+                            "label": "yunzhu"
+                        },
+                        {
+                            "type": "action",
+                            "path": "f7",
+                            "label": "Hiro"
+                        },
+                        {
+                            "type": "action",
+                            "path": "f8",
+                            "label": "ShenYue"
+                        },
+                        {
+                            "type": "action",
+                            "path": "f9",
+                            "label": "待添加~咕"
+                        }
+                    ]
+                },
+                {
+                    "type": "action",
+                    "path": "MZS2",
+                    "label": "This json is made by MZSY233."
+                },
+                {
+                    "type": "action",
+                    "path": "MZS3",
+                    "label": "Json Version:6.6"
+                },
+                {
+                    "type": "action",
+                    "path": "MZS4",
+                    "label": "QQ Official group:1037783625"
+                },
+                {
+                    "type": "action",
+                    "path": "MZS5",
+                    "label": "Thank you for using this json."
+                },
+                {
+                    "type": "action",
+                    "path": "MZS6",
+                    "label": "This json can be used free of charge without authorization!"
+                },
+                {
+                    "type": "action",
+                    "path": "MZS7",
+                    "label": "You can't change this json without authorization."
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "hide",
+            "label": "隐藏功能",
+            "has_shortcut": false,
+            "items": [
+                {
+                    "type": "toggle",
+                    "path": "internal/premium_unlocked",
+                    "label": "Unlock"
+                },
+                {
+                    "type": "slider",
+                    "path": "internal/premium/remaining_time",
+                    "label": "Times",
+                    "range_float": [
+                        1,
+                        1000000
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "switcher/enabled",
+                    "label": "战斗切换器",
+                    "icon": "ic_swap_horizontal_variant_black_24dp",
+                    "items": [
+                        {
+                            "type": "slider",
+                            "path": "switcher/slot_count",
+                            "label": "格子数",
+                            "values": [
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "killbled/enabled",
+                    "label": "杀戮[闪退]"
+                },
+                {
+                    "type": "toggle",
+                    "path": "killbled",
+                    "label": "无限-光环[无用的功能]",
+                    "icon": "ic_sword_cross_black_24dp",
+                    "items": [
+                        {
+                            "type": "slider",
+                            "path": "pick_custom_distance/distance",
+                            "label": "攻击距离",
+                            "range_float": [
+                                8,
+                                4096
+                            ]
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "server/far_bypass/enabled",
+                            "label": "修复线上",
+                            "has_shortcut": false
+                        },
+                        {
+                            "type": "slider",
+                            "path": "hitbox_expand/player_value",
+                            "label": "范围",
+                            "range_float": [
+                                1,
+                                100
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "imgui/scale",
+                    "label": "TBGUI开关",
+                    "items": [
+                        {
+                            "type": "slider",
+                            "path": "imgui/scale",
+                            "label": "TBGUI大小调节",
+                            "range_float": [
+                                1.0,
+                                15.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "gjgm",
+                    "label": "内部高级购买",
+                    "items": [
+                        {
+                            "type": "toggle",
+                            "path": "internal/premium/purchased",
+                            "value": 0,
+                            "label": "v0"
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "internal/premium/purchased",
+                            "value": 1,
+                            "label": "v1"
+                        },
+                        {
+                            "type": "slider",
+                            "path": "internal/premium/purchased",
+                            "label": "值",
+                            "values": [
+                                -1,
+                                0,
+                                1,
+                                2
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "path": "internal/premium/purchased"
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "premium_ticket",
+                    "label": "高级票",
+                    "items": [
+                        {
+                            "type": "toggle",
+                            "path": "premium_ticket",
+                            "value": 0,
+                            "label": "v0"
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "premium_ticket",
+                            "value": 1,
+                            "label": "v1"
+                        },
+                        {
+                            "type": "text",
+                            "path": "premium_ticket"
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "sbid",
+                    "label": "设备ID",
+                    "items": [
+                        {
+                            "type": "toggle",
+                            "path": "internal/premium/device_id",
+                            "value": 0,
+                            "label": "v0"
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "internal/premium/device_id",
+                            "value": 1,
+                            "label": "v1"
+                        },
+                        {
+                            "type": "text",
+                            "path": "internal/premium/device_id"
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "needyz",
+                    "label": "需要验证",
+                    "items": [
+                        {
+                            "type": "toggle",
+                            "path": "internal/premium/needs_validation",
+                            "value": 0,
+                            "label": "v0"
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "internal/premium/needs_validation",
+                            "value": 1,
+                            "label": "v1"
+                        },
+                        {
+                            "type": "slider",
+                            "path": "internal/premium/needs_validation",
+                            "label": "值",
+                            "values": [
+                                -1,
+                                0,
+                                1,
+                                2
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "path": "internal/premium/needs_validation"
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "MZSY",
+                    "label": "所有type样式",
+                    "has_shortcut": false,
+                    "items": [
+                        {
+                            "type": "toggle",
+                            "path": "type/toggle",
+                            "label": "toggle"
+                        },
+                        {
+                            "type": "slider",
+                            "path": "type/slider",
+                            "label": "slider_v1",
+                            "values": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7
+                            ]
+                        },
+                        {
+                            "type": "slider",
+                            "path": "type/slider",
+                            "label": "slider_v2",
+                            "range_float": [
+                                -50,
+                                50
+                            ]
+                        },
+                        {
+                            "type": "slider",
+                            "path": "type/slider",
+                            "label": "slider_v3",
+                            "range_float": [
+                                -10,
+                                10
+                            ],
+                            "decimal_scale": 5
+                        },
+                        {
+                            "type": "action",
+                            "path": "type/action",
+                            "label": "action"
+                        },
+                        {
+                            "type": "color",
+                            "path": "type/color",
+                            "label": "color"
+                        },
+                        {
+                            "type": "text",
+                            "path": "type/text"
+                        },
+                        {
+                            "type": "block_list",
+                            "path": "xray/show_blocks",
+                            "block_textures": [
+                                "diamond_ore"
+                            ],
+                            "block_values": [
+                                [
+                                    "diamond_ore",
+                                    "deepslate_diamond_ore"
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "tests",
+            "label": "实验性功能",
+            "has_shortcut": false,
+            "items": [
+                {
+                    "type": "toggle",
+                    "path": "killaura/frequency",
+                    "label": "一键设置自动攻击间隔[1]",
+                    "value": 1
+                },
+                {
+                    "type": "toggle",
+                    "path": "killaura/frequency",
+                    "label": "一键设置自动攻击间隔[20]",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "movement/speed/enabled",
+            "label": "速度Pro",
+            "icon": "ic_run_fast_black_24dp",
+            "items": [
+                {
+                    "type": "slider",
+                    "path": "movement/speed/multiplier",
+                    "label": "10~100",
+                    "range_float": [
+                        10,
+                        100
+                    ]
+                },
+                {
+                    "type": "slider",
+                    "path": "movement/speed/multiplier",
+                    "label": "Pro+",
+                    "range_float": [
+                        100,
+                        1000
+                    ]
+                },
+                {
+                    "type": "slider",
+                    "path": "movement/speed/multiplier",
+                    "label": "Pro++",
+                    "range_float": [
+                        1000,
+                        100000
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "movement/high_jump/enabled",
+            "label": "跳跃提升Pro",
+            "icon": "ic_chevron_double_up_black_24dp",
+            "items": [
+                {
+                    "type": "slider",
+                    "path": "movement/high_jump/height",
+                    "label": "10~100",
+                    "range_float": [
+                        10,
+                        100
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "pick_custom_distance/enabled",
+            "label": "触及范围Pro",
+            "items": [
+                {
+                    "type": "slider",
+                    "path": "pick_custom_distance/distance",
+                    "label": "4096~999999",
+                    "range_float": [
+                        4096,
+                        999999
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "killaura/enabled",
+            "label": "范围自动攻击Pro",
+            "icon": "ic_sword_cross_black_24dp",
+            "items": [
+                {
+                    "type": "toggle",
+                    "path": "killaura/attack_mobs",
+                    "label": "s_combat_killaura_attack_mobs"
+                },
+                {
+                    "type": "toggle",
+                    "path": "killaura/attack_players",
+                    "label": "s_combat_killaura_attack_player"
+                },
+                {
+                    "type": "slider",
+                    "path": "killaura/frequency",
+                    "label": "s_combat_killaura_interval",
+                    "range_float": [
+                        -2,
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "hitbox_expand/enabled",
+            "label": "范围攻击Pro",
+            "items": [
+                {
+                    "type": "slider",
+                    "path": "hitbox_expand/mob_value",
+                    "label": "s_combat_hitbox_expand_mob",
+                    "range_float": [
+                        1,
+                        50
+                    ]
+                },
+                {
+                    "type": "slider",
+                    "path": "hitbox_expand/player_value",
+                    "label": "s_combat_hitbox_expand_player",
+                    "range_float": [
+                        1,
+                        50
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "autobuild/fast_destroy/enabled",
+            "label": "范围挖掘Pro",
+            "icon": "ic_texture_box_black_24dp",
+            "items": [
+                {
+                    "type": "slider",
+                    "path": "autobuild/fast_destroy/size",
+                    "label": "5~50格/慎用",
+                    "range_float": [
+                        5,
+                        50
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "effects/haste/enabled",
+            "label": "急迫Pro",
+            "icon": "ic_pickaxe_black_24dp",
+            "items": [
+                {
+                    "type": "slider",
+                    "path": "effects/haste/amplifier",
+                    "label": "5~100",
+                    "range_float": [
+                        1,
+                        100
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "minimap/enabled",
+            "label": "小地图Pro",
+            "has_shortcut": false,
+            "items": [
+                {
+                    "type": "slider",
+                    "path": "minimap/radius",
+                    "label": "s_render_minimap_radius",
+                    "range_float": [
+                        1,
+                        100
+                    ]
+                },
+                {
+                    "type": "slider",
+                    "path": "minimap/size",
+                    "label": "text_size",
+                    "range_float": [
+                        1,
+                        500
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "minimap/show_players",
+                    "label": "s_render_minimap_show_players"
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "bar/yz",
+            "label": "快速建造",
+            "has_shortcut": false,
+            "items": [
+                {
+                    "type": "toggle",
+                    "path": "rapid_build/enabled",
+                    "label": "普通模式",
+                    "items": [
+                        {
+                            "type": "toggle",
+                            "path": "rapid_build/selection_mode",
+                            "label": "第1步",
+                            "value": 1
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "rapid_build/selection_mode",
+                            "label": "第2步",
+                            "value": 2
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "rapid_build/building_mode",
+                            "label": "放置",
+                            "value": 2
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "rapid_build/building_mode",
+                            "label": "破坏",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "rapid_build/command_mode",
+                    "label": "命令模式",
+                    "items": [
+                        {
+                            "type": "toggle",
+                            "path": "rapid_build/selection_mode",
+                            "label": "第一步",
+                            "value": 1
+                        },
+                        {
+                            "type": "toggle",
+                            "path": "rapid_build/selection_mode",
+                            "label": "第二步",
+                            "value": 2
+                        },
+                        {
+                            "type": "action",
+                            "path": "rapid_build/copy",
+                            "label": "复制"
+                        },
+                        {
+                            "type": "action",
+                            "path": "rapid_build/paste",
+                            "label": "破坏"
+                        },
+                        {
+                            "type": "action",
+                            "path": "rapid_build/fill",
+                            "label": "放置"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "toggle",
+            "path": "rapid_build_v2/enabled",
+            "label": "快速建造V2 Pro",
+            "items": [
+                {
+                    "type": "slider",
+                    "path": "rapid_build_v2/repeat",
+                    "label": "重复",
+                    "range_float": [
+                        1,
+                        100
+                    ]
+                },
+                {
+                    "type": "slider",
+                    "path": "rapid_build_v2/gap",
+                    "label": "间隔",
+                    "range_float": [
+                        1,
+                        100
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "rapid_build_v2/lock_direction",
+                    "label": "锁定方向"
+                },
+                {
+                    "type": "toggle",
+                    "path": "rapid_build_v2/sticky_mode",
+                    "label": "粘性模式"
+                }
+            ],
+            "has_shortcut": false
+        },
+        {
+            "type": "toggle",
+            "path": "mzsy/dzb",
+            "label": "bbtt挡坐标\n[缺少文件会导致无效]"
+        },
+        {
+            "type": "toggle",
+            "path": "xray/enabled",
+            "label": "透视-总开关",
+            "items": [
+                {
+                    "type": "toggle",
+                    "path": "tsp",
+                    "label": "透视Pro",
+                    "icon": "ic_cube_scan_black_24dp",
+                    "items": [
+                        {
+                            "type": "block_list",
+                            "path": "xray/show_blocks",
+                            "block_textures": [
+                                "tnt_side",
+                                "chest_front",
+                                "crafting_table_front",
+                                "barrel_side",
+                                "ender_chest_front",
+                                "hay_block_side",
+                                "stone",
+                                "bed_head_side",
+                                "barrier",
+                                "mob_spawner",
+                                "ice",
+                                "glowstone",
+                                "sea_lantern",
+                                "sand",
+                                "chain_command_block_back",
+                                "repeating_command_block_back",
+                                "command_block",
+                                "portal",
+                                "end_portal",
+                                "end_gateway"
+                            ],
+                            "block_values": [
+                                "tnt",
+                                "chest",
+                                "crafting_table",
+                                "barrel",
+                                "ender_chest",
+                                "hay_block",
+                                "stone",
+                                "bed",
+                                "barrier",
+                                "mob_spawner",
+                                "ice",
+                                "glowstone",
+                                "sea_lantern",
+                                "sand",
+                                "chain_command_block",
+                                "repeating_command_block",
+                                "command_block",
+                                "portal",
+                                "end_portal",
+                                "end_gateway"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "toggle",
+                    "path": "tspp",
+                    "label": "透视Pro+",
+                    "icon": "ic_cube_scan_black_24dp",
+                    "items": [
+                        {
+                            "type": "block_list",
+                            "path": "xray/show_blocks",
+                            "block_textures": [
+                                "diamond_ore",
+                                "gold_ore",
+                                "iron_ore",
+                                "coal_ore",
+                                "lapis_ore",
+                                "redstone_ore",
+                                "emerald_ore",
+                                "vanilla_1.17.0:copper_ore",
+                                "vanilla_1.17.0:deepslate/deepslate_diamond_ore",
+                                "vanilla_1.17.0:deepslate/deepslate_gold_ore",
+                                "vanilla_1.17.0:deepslate/deepslate_iron_ore",
+                                "vanilla_1.17.0:deepslate/deepslate_coal_ore",
+                                "vanilla_1.17.0:deepslate/deepslate_lapis_ore",
+                                "vanilla_1.17.0:deepslate/deepslate_redstone_ore",
+                                "vanilla_1.17.0:deepslate/deepslate_emerald_ore",
+                                "vanilla_1.17.0:deepslate/deepslate_copper_ore",
+                                "vanilla_1.17.0:raw_gold_block",
+                                "vanilla_1.17.0:raw_iron_block",
+                                "vanilla_1.17.0:raw_copper_block",
+                                "quartz_ore",
+                                "vanilla_1.16:nether_gold_ore",
+                                [
+                                    "vanilla_1.16:ancient_debris_side",
+                                    "vanilla_1.16:ancient_debris_side",
+                                    "vanilla_1.16:ancient_debris_top"
+                                ],
+                                "vanilla_1.16:gilded_blackstone",
+                                "diamond_block",
+                                "gold_block",
+                                "iron_block",
+                                "lapis_block",
+                                "redstone_block",
+                                "emerald_block",
+                                "lava_flow",
+                                "water_flow",
+                                "obsidian",
+                                "vanilla_1.16:netherite_block",
+                                "vanilla_1.16:crying_obsidian",
+                                [
+                                    "vanilla_1.16:lodestone_side",
+                                    "vanilla_1.16:lodestone_side",
+                                    "vanilla_1.16:lodestone_top"
+                                ],
+                                "vanilla_1.16:shroomlight",
+                                "glowstone",
+                                "soul_sand",
+                                "magma",
+                                "netherrack",
+                                "vanilla_1.16:blackstone",
+                                "vanilla_1.16:polished_blackstone_bricks",
+                                "red_nether_brick",
+                                "nether_brick",
+                                "stone",
+                                "stonebrick",
+                                "purpur_block",
+                                "end_bricks",
+                                "end_stone",
+                                "mob_spawner",
+                                "beacon",
+                                "bedrock",
+                                [
+                                    "tnt_side",
+                                    "tnt_side",
+                                    "tnt_top"
+                                ],
+                                "bookshelf",
+                                "portal",
+                                "end_portal",
+                                "barrier",
+                                "structure_void",
+                                "slime",
+                                "sea_lantern",
+                                "hardened_clay",
+                                [
+                                    "grass_path_side",
+                                    "grass_path_side",
+                                    "grass_path_top"
+                                ],
+                                "dirt",
+                                [
+                                    "crafting_table_side",
+                                    "crafting_table_side",
+                                    "crafting_table_top"
+                                ],
+                                "cobblestone",
+                                "cobblestone_mossy",
+                                "gravel",
+                                "sponge",
+                                "glass",
+                                "ice",
+                                "snow",
+                                "build_deny",
+                                "build_allow",
+                                "vanilla_1.17.0:amethyst_block",
+                                "vanilla_1.17.0:budding_amethyst",
+                                "vanilla_1.17.0:calcite",
+                                "vanilla_1.17.0:tuff",
+                                "vanilla_1.17.0:smooth_basalt",
+                                "vanilla_1.17.0:azalea_leaves",
+                                "vanilla_1.17.0:dirt_with_roots",
+                                "vanilla_1.17.0:copper_block",
+                                "vanilla_1.17.0:cut_copper",
+                                "vanilla_1.17.0:exposed_copper",
+                                "vanilla_1.17.0:exposed_cut_copper",
+                                "vanilla_1.17.0:oxidized_copper",
+                                "vanilla_1.17.0:oxidized_cut_copper",
+                                "vanilla_1.17.0:weathered_copper",
+                                "vanilla_1.17.0:weathered_cut_copper",
+                                "vanilla_1.17.0:dripstone_block",
+                                "vanilla_1.17.0:powder_snow",
+                                "vanilla_1.17.0:moss_block",
+                                "vanilla_1.17.0:tinted_glass",
+                                "vanilla_1.17.0:deepslate/deepslate",
+                                "vanilla_1.17.0:deepslate/cobbled_deepslate",
+                                "vanilla_1.17.0:deepslate/chiseled_deepslate",
+                                "vanilla_1.17.0:deepslate/deepslate_tiles",
+                                "vanilla_1.17.0:deepslate/deepslate_bricks",
+                                "vanilla_1.17.0:deepslate/cracked_deepslate_tiles",
+                                "vanilla_1.17.0:deepslate/cracked_deepslate_bricks",
+                                "vanilla_1.17.0:deepslate/polished_deepslate"
+                            ],
+                            "block_values": [
+                                "diamond_ore",
+                                "gold_ore",
+                                "iron_ore",
+                                "coal_ore",
+                                "lapis_ore",
+                                "redstone_ore",
+                                "emerald_ore",
+                                "copper_ore",
+                                "deepslate_diamond_ore",
+                                "deepslate_gold_ore",
+                                "deepslate_iron_ore",
+                                "deepslate_coal_ore",
+                                "deepslate_lapis_ore",
+                                "deepslate_redstone_ore",
+                                "deepslate_emerald_ore",
+                                "deepslate_copper_ore",
+                                "raw_gold_block",
+                                "raw_iron_block",
+                                "raw_copper_block",
+                                "quartz_ore",
+                                "nether_gold_ore",
+                                "ancient_debris",
+                                "gilded_blackstone",
+                                "diamond_block",
+                                "gold_block",
+                                "iron_block",
+                                "lapis_block",
+                                "redstone_block",
+                                "emerald_block",
+                                "lava",
+                                "water",
+                                "obsidian",
+                                "netherite_block",
+                                "crying_obsidian",
+                                "lodestone",
+                                "shroomlight",
+                                "glowstone",
+                                "soul_sand",
+                                "magma",
+                                "netherrack",
+                                "blackstone",
+                                "polished_blackstone_bricks",
+                                "red_nether_brick",
+                                "nether_brick",
+                                "stone",
+                                "stonebrick",
+                                "purpur_block",
+                                "end_bricks",
+                                "end_stone",
+                                "mob_spawner",
+                                "beacon",
+                                "bedrock",
+                                "tnt",
+                                "bookshelf",
+                                "portal",
+                                "end_portal",
+                                "barrier",
+                                "structure_void",
+                                "slime",
+                                "sealantern",
+                                "hardened_clay",
+                                "grass_path",
+                                "dirt",
+                                "crafting_table",
+                                "cobblestone",
+                                "mossy_cobblestone",
+                                "gravel",
+                                "sponge",
+                                "glass",
+                                "ice",
+                                "snow",
+                                "deny",
+                                "allow",
+                                "amethyst_block",
+                                "budding_amethyst",
+                                "calcite",
+                                "tuff",
+                                "smooth_basalt",
+                                "azalea_leaves",
+                                "dirt_with_roots",
+                                "copper_block",
+                                "cut_copper",
+                                "exposed_copper",
+                                "exposed_cut_copper",
+                                "oxidized_copper",
+                                "oxidized_cut_copper",
+                                "weathered_copper",
+                                "weathered_cut_copper",
+                                "dripstone_block",
+                                "powder_snow",
+                                "moss_block",
+                                "tinted_glass",
+                                "deepslate",
+                                "cobbled_deepslate",
+                                "chiseled_deepslate",
+                                "deepslate_tiles",
+                                "deepslate_bricks",
+                                "cracked_deepslate_tiles",
+                                "cracked_deepslate_bricks",
+                                "polished_deepslate"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "command_list"
+        }
+    ]
+}
